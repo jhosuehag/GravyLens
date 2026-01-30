@@ -1,68 +1,59 @@
-# 🦅 GravyLens (formerly Navaja Suiza)
+# 🦅 GravyLens (antes Navaja Suiza)
 
-> **Productivity Overlay Service featuring Real-time OCR, Smart History, and Floating Tools.**
+> **Tu capa de productividad invisible: OCR en tiempo real, Historial Inteligente y Herramientas Flotantes.**
 
-**GravyLens** is not just an app; it's a powerful productivity layer for your Android device. It operates as a persistent **Overlay Service**, allowing you to summon essential tools like text capture, OCR, and clipboard history on top of *any* other application, without breaking your flow.
+**GravyLens** es más que una simple aplicación; es una poderosa "navaja suiza" que vive sobre tu sistema Android. Funciona como un **Servicio de Superposición** (Overlay), permitiéndote invocar herramientas esenciales como captura de texto, OCR y recuperación de portapapeles sobre *cualquier* otra aplicación, sin interrumpir lo que estás haciendo.
 
-## 🚀 Key Features
+## 🚀 ¿Qué hace GravyLens?
 
-### 👁️ Smart Floating Handle
-- **Always Available**: access your tools from anywhere.
-- **Magnetic Snapping**: satisfying animations that stick to screen edges.
-- **Intelligent Positioning**: remembers where you left it, adapting to screen rotation.
-- **Non-Intrusive**: auto-hides or minimizes to stay out of your way.
+### 👁️ Botón Flotante Inteligente
+Tu acceso directo a la productividad.
+- **Siempre Disponible**: Invoca las herramientas desde cualquier pantalla.
+- **Atracción Magnética**: El botón se adhiere elegantemente a los bordes con físicas naturales.
+- **Memoria de Posición**: Recuerda dónde lo dejaste, adaptándose si giras la pantalla.
 
-### ✂️ Screen Snipping & OCR
-- **Capture Everything**: take screenshots of specific regions.
-- **Instant OCR**: extract text from images in real-time using **Google ML Kit**.
-- **Interactive Overlay**: tap on detected text to copy it instantly.
+### ✂️ Recorte de Pantalla y OCR Instantáneo
+Olvídate de tomar capturas completas para luego recortarlas.
+- **Captura Precisa**: Selecciona solo el área que te interesa.
+- **OCR en Tiempo Real**: Extrae texto de imágenes instantáneamente usando la potencia de **Google ML Kit**.
+- **Interacción Directa**: Toca el texto detectado en la pantalla para copiarlo al instante.
 
-### 📜 Universal History
-- **Clipboard Manager**: automatically saves copied text to a local, encrypted database.
-- **Floating Gallery**: browse your past captures and snippets without leaving your current app.
-- **Privacy First**: all data is processed and stored **100% on-device**. No cloud upload.
+### 📜 Historial Universal
+Nunca pierdas un texto copiado.
+- **Gestor de Portapapeles**: Guarda automáticamente todo lo que copias en una base de datos local cifrada.
+- **Galería Flotante**: Revisa tus recortes y textos anteriores sin salir de tu aplicación actual.
+- **Privacidad Total**: Todo el procesamiento y almacenamiento ocurre **100% en tu dispositivo**. Nada se sube a la nube.
 
-## 🛠️ Architecture & Tech Stack
+## 🛠️ Tecnología y Arquitectura
 
-Data privacy and system stability are our top priorities.
+Diseñado con estándares de ingeniería modernos para estabilidad y rendimiento.
 
-- **Language**: Kotlin 1.9+
-- **Architecture**: MVVM Service-Centric
-- **Background**: Foreground Service with WindowManager
-- **Persistence**: Room Database (SQLite)
-- **ML Engine**: Google ML Kit (Text Recognition V2)
-- **UI**: Android Views & Minimalist Overlay Design
+- **Lenguaje**: Kotlin 1.9+
+- **Arquitectura**: MVVM centrada en Servicios (Service-Centric)
+- **Motor**: Foreground Service con gestión avanzada de WindowManager
+- **Base de Datos**: Room (SQLite)
+- **Inteligencia Artificial**: Google ML Kit (Reconocimiento de Texto V2)
 
-## 📦 Installation
+## 📦 Instalación y Desarrollo
 
-### Prerequisites
-- Android Studio Hedgehog or higher
+### Requisitos
+- Android Studio Hedgehog o superior
 - JDK 17
 - Android SDK API 34
 
-### Building from Source
+### Compilar el proyecto
 
-1. **Clone the repository**:
+1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/Navaja-Suiza.git
+   git clone https://github.com/jhosuehag/GravyLens.git
    ```
-2. **Open in Android Studio**.
-3. **Build the project**:
+2. **Abrir en Android Studio**.
+3. **Compilar**:
    ```bash
    ./gradlew clean assembleDebug
    ```
-4. **Run** on your device or emulator.
+4. **Ejecutar** en tu dispositivo o emulador.
 
-## 🤝 Contributing
+## 📄 Licencia
 
-Contributions are welcome! Please feel free to verify the `TECHNICAL_REPORT.md` for deep-dive architecture details before submitting a Pull Request.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
