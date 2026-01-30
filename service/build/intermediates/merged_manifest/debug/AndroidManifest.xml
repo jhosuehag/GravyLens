@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.navajasuiza.service" >
+
+    <uses-sdk android:minSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application>
+        <service
+            android:name="com.navajasuiza.service.FloatingService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+        <!--
+                 Note: foregroundServiceType might need refinement based on exact Android version usage. 
+                 'dataSync' or 'specialUse' might be safer if not doing projection immediately, 
+                 but user mentioned MediaProjection later. For now commonly 'specialUse' or 'dataSync' for overlay tools. 
+                 Wait, user said 'Service (ForegroundService)'. Will stick to basic defaults or none if API < 29, 
+                 but API 34 requires it. Let's use 'specialUse' if available or just generic for now and fix compile if needed.
+                 Actually, simpler to omit type if not strictly enforcing yet, or use 'dataSync' as placeholder.
+                 Re-reading user request: "mixture... MediaProjection". So eventually likely "mediaProjection".
+                 Let's stick to no specific type for this step unless it errors, or add 'dataSync'.
+        -->
+    </application>
+
+</manifest>

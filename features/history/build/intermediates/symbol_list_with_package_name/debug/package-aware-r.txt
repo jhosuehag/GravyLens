@@ -1,0 +1,19 @@
+com.navajasuiza.features.history
+id btnClearHistory
+id btnClose
+id btnCopy
+id btnDelete
+id btn_close_gallery
+id etSearch
+id headerContainer
+id img_thumbnail
+id recycler_gallery
+id rvHistory
+id text_empty_gallery
+id tvEmptyState
+id tvMetadata
+id tvTextPreview
+layout item_history
+layout item_snippet
+layout view_floating_gallery
+layout view_floating_history

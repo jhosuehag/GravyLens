@@ -1,0 +1,13 @@
+R_DEF: Internal format may change without notice
+local
+drawable handle_pill
+drawable ic_cut
+id action_gallery
+id action_history
+id action_scan
+id action_snip
+id panel_card
+id panel_container
+layout layout_floating_panel
+string floating_handle_description
+style Theme.NavajaSuiza.Overlay
